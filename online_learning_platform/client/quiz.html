@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+</head>
+<body>
+  <h2>Quiz: HTML Fundamentals</h2>
+  <form id="quizForm">
+    <label>1. What does HTML stand for?</label><br>
+    <input type="radio" name="q1" value="A"> Hyper Trainer Markup Language<br>
+    <input type="radio" name="q1" value="B"> HyperText Markup Language<br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      // Send result to server
+      alert("Quiz submitted! Progress updated.");
+    });
+  </script>
+</body>
+</html>
+
